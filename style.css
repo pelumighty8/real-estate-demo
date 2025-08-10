@@ -1,96 +1,195 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pelumighty Properties — Luxury Real Estate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV / HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Pelumighty Properties</h1>
+        <p class="tag">Luxury Homes & Global Deals</p>
+      </div>
+      <div class="contact-short">
+        <a href="https://wa.me/2349064895616" target="_blank" rel="noopener">WhatsApp: +234 906 489 5616</a>
+        <span>•</span>
+        <a href="mailto:pelumioni23@gmail.com">pelumioni23@gmail.com</a>
+      </div>
+    </div>
+  </header>
 
-body {
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-}
+  <!-- HERO SLIDER -->
+  <section class="hero-slider">
+    <div class="slides">
+      <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80')">
+        <div class="slide-inner">
+          <h2>Exclusive Luxury Villas</h2>
+          <p>Premium listings for discerning buyers worldwide</p>
+          <a class="cta" href="#contact">Get VIP Access</a>
+        </div>
+      </div>
 
-header {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-}
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80')">
+        <div class="slide-inner">
+          <h2>Beachfront & Waterfront</h2>
+          <p>Turn-key properties in top destinations</p>
+          <a class="cta" href="#properties">View Listings</a>
+        </div>
+      </div>
 
-.hero {
-    background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80')">
+        <div class="slide-inner">
+          <h2>High-rise Penthouses</h2>
+          <p>City living with unmatched panoramic views</p>
+          <a class="cta" href="#contact">Request Tour</a>
+        </div>
+      </div>
+    </div>
 
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
+    <div class="slider-controls">
+      <button id="prev" aria-label="Previous slide">‹</button>
+      <button id="next" aria-label="Next slide">›</button>
+    </div>
+  </section>
 
-.properties {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
+  <!-- PROPERTIES -->
+  <main>
+    <section id="properties" class="properties container">
+      <h2 class="section-title">Featured Global Listings</h2>
 
-.property {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-}
+      <div class="grid">
+        <!-- card 1 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1000&q=80" alt="Beachfront Villa">
+          <div class="card-body">
+            <h3>Luxury Beachfront Villa</h3>
+            <p class="meta">$2,500,000 — Maldives</p>
+            <p class="desc">Private beach, pool, full staff-ready property. Walk-through and documentation available.</p>
+            <a class="btn-whatsapp" href="https://wa.me/2349064895616?text=Hi%20Pelumighty,%20I%20am%20interested%20in%20the%20Luxury%20Beachfront%20Villa">Buy / Rent via WhatsApp</a>
+          </div>
+        </article>
 
-.property img {
-    width: 100%;
-    display: block;
-}
+        <!-- card 2 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1000&q=80" alt="Modern City Apartment">
+          <div class="card-body">
+            <h3>Modern City Apartment</h3>
+            <p class="meta">$850,000 — Dubai</p>
+            <p class="desc">Two-bedroom apartment in downtown with concierge service and skyline views.</p>
+            <a class="btn-whatsapp" href="https://wa.me/2349064895616?text=Hi%20Pelumighty,%20I%20am%20interested%20in%20the%20Modern%20City%20Apartment">Buy / Rent via WhatsApp</a>
+          </div>
+        </article>
 
-.property h3 {
-    color: #007BFF;
-    margin: 10px 0;
-}
+        <!-- card 3 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1560448075-bb4a1b6b0d70?auto=format&fit=crop&w=1000&q=80" alt="Country Mansion">
+          <div class="card-body">
+            <h3>Countryside Mansion</h3>
+            <p class="meta">$1,800,000 — UK</p>
+            <p class="desc">Sprawling grounds, modern refurbishment, excellent investment potential.</p>
+            <a class="btn-whatsapp" href="https://wa.me/2349064895616?text=Hi%20Pelumighty,%20I%20am%20interested%20in%20the%20Countryside%20Mansion">Buy / Rent via WhatsApp</a>
+          </div>
+        </article>
 
-.contact {
-    background: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-}
+        <!-- card 4 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1000&q=80" alt="Luxury Penthouse">
+          <div class="card-body">
+            <h3>Luxury Penthouse</h3>
+            <p class="meta">$3,200,000 — Manhattan</p>
+            <p class="desc">High-floor penthouse with private elevator and rooftop terrace.</p>
+            <a class="btn-whatsapp" href="https://wa.me/2349064895616?text=Hi%20Pelumighty,%20I%20am%20interested%20in%20the%20Luxury%20Penthouse">Buy / Rent via WhatsApp</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-.contact form {
-    max-width: 400px;
-    margin: auto;
-}
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2 class="section-title">Contact / Request Info</h2>
+      <!-- IMPORTANT: replace the action URL with your own Formspree endpoint -->
+      <form id="contactForm" action="https://formspree.io/f/mjkbwzpe" method="POST">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Full name" required />
+          <input type="email" name="_replyto" placeholder="Email address" required />
+        </div>
 
-.contact input, 
-.contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+        <div class="form-row">
+          <input type="text" name="whatsapp" placeholder="WhatsApp number (include country code)" required />
+          <input type="text" name="country" placeholder="Country" required />
+        </div>
 
-.contact button {
-    background: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-}
+        <textarea name="message" rows="5" placeholder="Your message / request" required></textarea>
 
-.contact button:hover {
-    background: #0056b3;
-}
+        <button type="submit" class="btn-submit">Send message</button>
+        <p class="form-note">Or message me directly via WhatsApp: <a href="https://wa.me/2349064895616" target="_blank" rel="noopener">+234 906 489 5616</a></p>
+      </form>
+    </section>
+  </main>
 
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Pelumighty Properties — Web Dev Pelumighty of Ekiti</p>
+      <p>Phone: +234 906 489 5616 • Email: pelumioni23@gmail.com</p>
+    </div>
+  </footer>
+
+  <!-- SIMPLE JS: slider + smooth scroll -->
+  <script>
+    // Slider logic
+    (function () {
+      const slides = document.querySelectorAll('.slide');
+      const nextBtn = document.getElementById('next');
+      const prevBtn = document.getElementById('prev');
+      let current = 0;
+      const total = slides.length;
+
+      function show(index) {
+        slides.forEach((s, i) => s.classList.toggle('active', i === index));
+      }
+
+      function next() {
+        current = (current + 1) % total;
+        show(current);
+      }
+      function prev() {
+        current = (current - 1 + total) % total;
+        show(current);
+      }
+
+      // auto-advance
+      let timer = setInterval(next, 4500);
+
+      // controls
+      if(nextBtn) nextBtn.addEventListener('click', () => { next(); resetTimer(); });
+      if(prevBtn) prevBtn.addEventListener('click', () => { prev(); resetTimer(); });
+
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(next, 4500);
+      }
+
+      // smooth anchor scroll
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          e.preventDefault();
+          const id = a.getAttribute('href');
+          document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    })();
+
+    // optional: confirm send (prevents navigation on Formspree redirect)
+    document.getElementById('contactForm')?.addEventListener('submit', function () {
+      const btn = this.querySelector('.btn-submit');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+    });
+  </script>
+</body>
+</html>
